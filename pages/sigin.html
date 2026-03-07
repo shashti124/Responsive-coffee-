@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./page css/sign in.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./page css/style.css">
+    <script src="./page js/script.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">☕ Brew Haven</div>
+        <div class="menu-btn" id="menuBtn">☰</div>
+        <nav>
+            <ul id="navLinks">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="././/pages/menu.html">Menu</a></li>
+                <li><a href="././/pages/order.html">Order</a></li>
+                <li><a href="././/pages/sigin.html">sign in</a></li>
+                <li><a href="././/pages/login.html">Login</a></li>
+                <li><a href="././/pages/about.html">About</a></li>
+                <li><a href="././/pages/contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="login-container">
+
+        <h1>Brew Haven ☕</h1>
+        <p>Welcome back! Please sign in.</p>
+
+        <form>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+
+            <div class="password-container">
+                <input type="password" id="password" class="input-password" placeholder="Enter your password">
+                <span class="eye-icon" id="toggle">👁</span>
+            </div>
+
+            <div class="options">
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit">Sign In</button>
+
+            <p class="signup-text">
+                Don't have an account? <a href="#">Create Account</a>
+            </p>
+
+        </form>
+
+    </div>
+
+    <script>
+        const password = document.getElementById("password");
+        const toggle = document.getElementById("toggle");
+
+        toggle.addEventListener("click", function () {
+
+            if (password.type === "password") {
+                password.type = "text";
+                toggle.textContent = "👁‍🗨";
+            }
+            else {
+                password.type = "password";
+                toggle.textContent = "👁";
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>

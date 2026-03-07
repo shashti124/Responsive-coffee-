@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100%;
+    background: #f8f5f2;
+    color: #333;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #3e2723;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover .menu-btn {
+    display: none;
+    font-size: 22px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* MENU */
+
+.menu {
+    padding: 120px 8% 60px;
+    text-align: center;
+}
+
+.menu h1 {
+    margin-bottom: 40px;
+    color: #3e2723;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.menu-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.menu-card h3 {
+    color: #6d4c41;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* CTA */
+
+
+.cta {
+    background: #3e2723;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+.cta .btn{
+    background: #ffcc80;
+    color:#3e2723;
+    color: #3e2723;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 35px;   
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);  
+    transition: 0.3s;
+}
+
+.cta .btn:hover{
+    background: #fff3e0;
+    transform: scale(1.05);   
+}
+
+footer {
+    background: #2b1d1a;
+    color: #ccc;
+    padding: 30px 8%;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #3e2723;
+        position: absolute;
+        top: 60px;
+        right: 8%;
+        width: 200px;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+}
+
+/* HEADER SHADOW */
+
+.shadow {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}

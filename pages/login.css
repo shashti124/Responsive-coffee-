@@ -1,0 +1,140 @@
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #f8f5f2;
+        color: #333;
+      }
+
+      /* HEADER */
+
+      header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #3e2723;
+        padding: 15px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+      }
+
+      .logo {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin-left: 25px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #ffcc80;
+      }
+
+      /* LOGIN SECTION */
+
+      .login-section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 80px;
+      }
+
+      .login-box {
+        background: #fff;
+        padding: 40px;
+        width: 350px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .login-box h2 {
+        margin-bottom: 25px;
+        color: #3e2723;
+      }
+
+      .input-box {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+      .input-box label {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .input-box input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+      }
+
+      .input-box input:focus {
+        border-color: #6d4c41;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 12px;
+        background: #6d4c41;
+        color: #fff;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background: #5d4037;
+      }
+
+      .extra {
+        margin-top: 15px;
+        font-size: 14px;
+      }
+
+      .extra a {
+        color: #6d4c41;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .extra a:hover {
+        text-decoration: underline;
+      }
+
+      /* FOOTER */
+
+      footer {
+        background: #2b1d1a;
+        color: #ccc;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 40px;
+      }

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Brew Haven Coffee</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="login.css" rel="stylesheet"/>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">☕ Brew Haven</div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./order.html">Order</a></li>
+          <li><a href="./sigin.html">sign in</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./about.htm">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="login-section">
+      <div class="login-box">
+        <h2>Login to Brew Haven</h2>
+
+        <form onsubmit="return validateLogin();">
+          <div class="input-box">
+            <label>Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <label>Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+
+          <button class="btn">Login</button>
+
+          <div class="extra">
+            <p>Don't have an account? <a href="#">Register</a></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>© 2026 Brew Haven Coffee | All Rights Reserved</footer>
+
+    <script src="login.js"></script>
+  </body>
+</html>

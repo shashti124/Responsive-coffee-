@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100%;
+    background: #f8f5f2;
+    color:#333;
+    display:flex;
+    justify-content:center;
+    align-items: stretch;
+    min-height:100vh;
+    flex-direction: column;
+    margin: 0;
+    padding-top:80 px;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:#3e2723;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    color:#fff;
+    font-size:22px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffcc80;
+}
+
+/* Container */
+.contact-container{
+    background:white;
+    width:90%;
+    max-width:1000px;
+    display:flex;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,0.3);
+    margin: 120px auto 0 auto;
+    margin-top: 120px;
+     margin-bottom: 60px;
+}
+
+
+
+/* Left Side */
+.contact-info{
+    background:linear-gradient(135deg,#4E342E,#8D6E63);
+    color:white;
+    padding: 40px;
+    flex:1;
+   
+}
+
+.contact-info h2{
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin:15px 0;
+    font-size:14px;
+}
+
+.contact-link{
+    color: #FFE0B2;
+    font-weight: 500;
+}
+.contact-link:hover{
+    color:#FFFFFF;
+}
+.map {
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Right Side */
+.contact-form{
+    flex:1;
+    padding:40px;
+}
+
+.contact-form h2{
+    margin-bottom:20px;
+    color:#4b2e2e;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group input,
+.input-group textarea{
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    outline:none;
+    transition:0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus{
+    border-color:#6f4e37;
+    box-shadow:0 0 8px rgba(111,78,55,0.4);
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+   background:#ffcc80;
+    color:#3e2723;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#fff3e0;
+}
+
+.cta{
+    background:#3b2b2b;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.btn{
+    background:#ffcc80;
+    color:#3e2723;
+    padding:10px 25px;
+    border-radius:50px;   /* yane button adakruti (oval) hoto */
+    font-size:14px;
+    cursor:pointer;
+    margin-top:20px;
+    width: auto;
+}
+.btn:hover{
+  background:#fff3e0;
+}
+
+footer{
+    background:#2a2a2a;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top: auto;
+}
+    
+
+
+/* Responsive Media Query */
+@media(max-width:768px){
+    .contact-container{
+        flex-direction:column;
+    }
+    .contact-info{
+        text-align:center;
+    }
+}
+
